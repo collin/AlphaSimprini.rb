@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AlphaSimprini</title>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= csrf_meta_tags %>
+  <%= 
+    rubyscript_include 'alpha_simprini', 'alpha_simprini/observable',
+      'alpha_simprini/core/dom',
+      'alpha_simprini/core/view', 'alpha_simprini/core/run_loop',
+      'alpha_simprini/core/model', 'alpha_simprini/core/application',
+      'alpha_simprini/core/binding', 'alpha_simprini/core/array_binding',
+      'alpha_simprini/core/array_observer',
+      'alpha_simprini/../pasteup/application'
+  %>
+
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
